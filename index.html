@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Greensock Animation | Website Intro | HTML, CSS & JavaScript</title>
+		<link rel="stylesheet" href="swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class="container1">
+
+<div class="overlay">
+	<p class="screen">Slider 3D</p>
+	<div class="intro">
+		<button class="myBtn" onclick="fadeOut()">Explore</button>
+	</div>
+</div>
+
+<div class="overlay-2"></div>
+
+
+    	<div class="content">
+    		<!-- <h1>Lading Page</h1>
+    		<p class="data">
+    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum rerum eos deleniti corporis inventore libero, vitae adipisci qui tenetur dolorem alias ad veniam, voluptatum cupiditate quia accusamus. Omnis ab repudiandae nemo accusantium, optio magnam ea cum tempora quia doloribus alias sit molestias placeat facere voluptatibus voluptatem in deserunt autem. Voluptates?
+    		</p> -->
+
+    		<!-- Swiper -->
+
+  
+ <div id="particles-js"></div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="IMG_2466.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen2.jpg"  width="400" height="400" class="img-responsive"s>
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen3.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen4.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen5.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen6.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen7.jpeg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+      <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen8.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+       <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen9.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+       <div class="swiper-slide"> 
+      <div class="imgBx">
+        <img src="imagen10.jpg"  width="400" height="400" class="img-responsive">
+      </div>
+      <div class="details">
+        <h3>Bladimir Mendoza<br><span>Web Developer</span></h3>
+      </div>
+      </div>
+    
+    </div>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+
+    <!-- Add Pagination -->
+        <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+
+
+    	</div>
+    </div>
+
+	<script type="text/javascript" src="websiteIntro.js"></script>
+    <script type="text/javascript" src="swiper.min.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+       keyboard: {
+      enabled: true,
+      },
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 60,
+        stretch: 0,
+        depth: 500,
+        modifier: 1,
+        slideShadows : true,
+
+      },
+       pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+</html>

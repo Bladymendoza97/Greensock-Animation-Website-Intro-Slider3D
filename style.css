@@ -1,0 +1,243 @@
+html, body{
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/*
+body{
+	cursor: crosshair;
+	font-family: Poppins;
+	background: url(hero.jpg) no-repeat 50% 50%;
+}*/
+
+.content{
+	width: 100%;
+	/*margin: 0 auto;*/
+	z-index: -1;
+	/*position: absolute;*/
+	top: 100%;
+	left:5%;
+
+	transform: translate(0, -50%);
+}
+
+/*.content h1{
+	font-family: Poppins;
+	font-size: 54px;
+	color: #101010;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}*/
+/*.content p{
+	margin-top: 0;
+	text-align: center;
+	color: #101010;
+	font-weight: 400;
+}*/
+
+.overlay-2{
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+      background: linear-gradient(45deg, #e91e63, #262626); 
+
+
+}
+
+.overlay{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: #101010;
+	position: fixed;
+}
+
+.overlay p{
+	font-size: 200px;
+	font-weight: 800;
+	margin-top: 20%;
+	text-align: center;
+}
+
+.screen{
+	color: #323232;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.myBtn{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+
+}
+
+button{
+	display: block;
+	padding: 24px 48px;
+	font-weight: 700 !important;
+	font-size: 20px !important;
+	letter-spacing: 6px;
+	color: #fff !important;
+	border:2px solid #fff;
+	text-transform: uppercase;
+	outline: none;
+	overflow: hidden;
+	background: none;
+	z-index: 1;
+	cursor: crosshair !important;
+	transition: 0.8s linear;
+}
+
+.myBtn:hover {
+color: #101010 !important;
+cursor: crosshair;
+}
+
+.myBtn:before{
+	content: "";
+	position: absolute;
+    background: linear-gradient(45deg, #eaeaea, #323232); 
+
+	/*background: #fff;*/
+	bottom:0;
+	left: 0;
+	right: 0;
+	top: 100%;
+	z-index: -1;
+	transition: top 0.8s ease-out;
+	/*transition: right 0.8s ease-out;*/
+
+}
+
+.myBtn:hover:before{
+	top: 0;
+}
+
+
+/*SWIPER SLIDER*/
+
+ #particles-js
+    {
+     width: 100%;
+      height: 100%;
+      background: #000;
+      background: linear-gradient(45deg, #e91e63, #262626); 
+      position: absolute;
+
+}
+
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 45px;
+      /*height: 200%;*/
+      /*margin-top: 10%;*/
+      position:relative;
+
+
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 480px;
+      background: #eaeaea;
+      box-shadow: 0 6px 20px rgba(0,0,0,1);
+
+
+      
+    }
+
+    .swiper-slide .imgBx{
+      width: 100%;
+      height: 405px;
+      overflow: hidden;
+
+    }
+
+    .swiper-slide .imgBx img{
+      width: 100%;
+
+    }
+    .swiper-slide .details{
+      box-sizing: border-box;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .swiper-slide .details h3{
+      margin: 0;
+      padding: 0;
+      font-size: 20px !important ;
+      text-align: center;
+      line-height: 20px;
+      font-weight: 700;
+    }
+
+    .swiper-slide .details h3 span{
+
+    font-size: 16px !important ;
+    color: #f44336;
+    }
+
+
+/*@media screen*/
+
+
+
+
+@media screen and (max-width: 768px){
+	.overlay p{
+	font-size: 115px;
+	text-align: center;
+		top: 30%;
+
+}
+.myBtn{
+	display: block;
+	padding: 16px 36px;
+	margin-top: 28%;
+
+}
+}
+
+
+
+@media screen and (max-width: 360px){
+	.overlay p{
+	font-size: 100px;
+	text-align: center;
+	top: 35%;
+}
+
+.myBtn{
+	display: block;
+	padding: 16px 36px;
+	margin-top: 40%;
+
+}
+}
+
+@media screen and (max-width: 320px){
+	.overlay p{
+	font-size: 100px;
+	text-align: center;
+	top: 34%;
+}
+
+.myBtn{
+	display: block;
+	padding: 15px 35px;
+	margin-top: 45%;
+
+}
+}
+
