@@ -98,13 +98,13 @@ button{
 .myBtn:hover {
 color: #101010 !important;
 cursor: crosshair;
+/*font-weight: 1000 !important;*/
 }
 
 .myBtn:before{
 	content: "";
 	position: absolute;
     background: linear-gradient(45deg, #eaeaea, #323232); 
-
 	/*background: #fff;*/
 	bottom:0;
 	left: 0;
